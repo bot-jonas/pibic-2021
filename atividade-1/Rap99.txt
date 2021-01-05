@@ -1,0 +1,21 @@
+2.1 - Introduction
+The cellular concept: Many lower power transmitters (small cells), each providing coverage to only a small portion of the service area.
+Each BS is allocated a portion of the total number of channels available to the entire system, and nearby base stations are assigned
+different groups of channels so that the interference between base stations (and the mobile users under their control)  is minimized.
+By systematically spacing BSs and their channel throughout a market, the available channels are distributed throughout the geographic
+region and may be reused as many times as necessary, so long as the interference between co-channel stations is kept below acceptable
+levels.
+2.2 - Frequency Reuse
+Hexagons and formula to find the nearest co-channel neighbors
+2.5 - Interference and System Capacity
+Sources of interference: another mobile in the same cell, a call in progress in a neighboring cell, other BSs operating in the same
+frequency band, non-cellular systems leaking energy into the cellular frequency band.
+Major types of system-generated cellular interference are co-channel and adjacent channel interference.
+2.5.1 - Co-channel Interference and System Capacity
+Co-channel cells are the cells that use the same set of frequencies in a given coverage area.
+Thermal noise can be overcome by increasing the signal-to-noise ration (SNR), but co-channel interference cannot be combated by simply
+increasing the carrier power of a transmitter, because an increase in carrier transmit power increases the interference to neighboring
+co-channel cells.
+To reduce co-channel interference, co-channel cells must be physically separated by a minimum distance to provide sufficient isolation
+dute to propagation.
+2.7.2 - Sectoring /69
