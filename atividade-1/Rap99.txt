@@ -18,4 +18,58 @@ increasing the carrier power of a transmitter, because an increase in carrier tr
 co-channel cells.
 To reduce co-channel interference, co-channel cells must be physically separated by a minimum distance to provide sufficient isolation
 dute to propagation.
-2.7.2 - Sectoring /69
+2.7.2 - Sectoring
+
+3.1 - Introduction to Radio Wave Propagation
+reflection, diffraction and scattering
+multipath fading
+path loss
+large-scale model: predict the mean signal strength for an arbitrary T-R separation distance, characterize signal strength over large
+T-R separation distances.
+small-scale model: characterize the rapid fluctuations of the received signal strength over very short travel distances or short time
+durations.
+3.2 - Free Space Propagation Model
+Used when the transmitter and receiver have a clear, unobstructed line-of-sight path between them.
+Friss free space equation: Pr(d) = Pt*Gt*Gr*l²/(4pi)²/d²/L
+Path Loss: difference in db between transmitted and received power
+3.9.1 - Log-distance Path Loss model
+average large-scale
+PL(d) = PL(d0) + 10nlog(d/d0) [dB]
+n: path loss exponent, depends on specific propagation environment (free space = 2, obstructions > 2)
+d0: close-in reference
+3.9.2 - Log-normal shadowing
+Previous equation doesn't consider that the surrounding environmental clutter may be vastly different at two different locations having
+the same T-R separation, this leads to measured signals which are vastly different than the average value.
+Measurements have shown that PL(d) is log-normally(normal in dB) distributed about the mean value (previous).
+PL(d) = PL*(d) + Xo, Xo = Gaussian(0, o)
+3.10 - Outdoor Propagation Models
+Models to take into account the irregularities of the terrain like the earth curvature, mountains, buildings, trees, etc.
+3.10.3 - Okumura Model
+Based on mesuared data for prediction in urban areas, frequencies in the range [150MHz, 1920MHz], distances of [1km, 100km] and antenna heights of [30m, 1000m].
+Is basically a set of curves giving the median attenuation relative to free space (Amu).
+L50(dB) = Lf + Amu(f,d) - G(He) - G(Hre)-Garea
+G(Hte) : base station antenna height gain factor
+G(Hre) : mobile antenna height gain factor
+Garea  : environment type gain factor
+
+G(Hte) = 20log(Hte/200), 30m <Hte <1000m
+G(Hre) = 10log(Hre/3), Hre <= 3m; 20log(Hre/3), 10m>Hre > 3m
+
+Simple and best in terms of accuracy
+3.10.4 - Hata Model
+Empirical formulation of the graphical path loss data provied by Okamura
+(A lot  of regressions)
+3.10.5 - PCS Extension to Hata Model
+(More regressions)
+4 - Mobile Radio Propagation: Small-Scale Fading and Multipath
+Fading is the rapid fluctation of the amplitude of a radio signal over a short period of time or travel distance.
+Is caused by interference between versions of the transmitted signal which arrive at the receiver at slightly different times.
+4.1 - Small-scale Multipath Propagation
+4.1.1 - Factors influencing small-scale fading
+- Multipath propagation: presence of reflectiing objects and scatters that dissipates signals in amplitude, phase and time.
+Multiple versions arrive at the receiving antenna causing fluctuations in signal strenght.
+- Speed of the mobile: relative motion between BS and mobile results in random frequency modulation due to Doppler shifts on each multipath component.
+- Speed of surrounding objects: More doppler shift
+- The transmission bandwidth of the signal: 
+4.1.2 - Doppler Shift
+Physics
