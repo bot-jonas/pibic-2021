@@ -30,7 +30,7 @@ small-scale model: characterize the rapid fluctuations of the received signal st
 durations.
 3.2 - Free Space Propagation Model
 Used when the transmitter and receiver have a clear, unobstructed line-of-sight path between them.
-Friss free space equation: Pr(d) = Pt*Gt*Gr*l²/(4pi)²/d²/L
+Friis free space equation: Pr(d) = Pt*Gt*Gr*l²/(4pi)²/d²/L
 Path Loss: difference in db between transmitted and received power
 3.9.1 - Log-distance Path Loss model
 average large-scale
@@ -57,7 +57,7 @@ G(Hre) = 10log(Hre/3), Hre <= 3m; 20log(Hre/3), 10m>Hre > 3m
 
 Simple and best in terms of accuracy
 3.10.4 - Hata Model
-Empirical formulation of the graphical path loss data provied by Okamura
+Empirical formulation of the graphical path loss data provied by Okumura
 (A lot  of regressions)
 3.10.5 - PCS Extension to Hata Model
 (More regressions)

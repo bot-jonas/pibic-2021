@@ -1,0 +1,68 @@
+1 - Introduction: The Wireless Communication Channel
+1.1 - Introduction
+1.2 - Concepts of a wireless channel
+1.3 - The Electromagnetic spectrum
+Frequencies in the range [3kHz, 300GHz]
+(VL, L, M, H, VH, UH, SH, EH)F
+1.4 - History
+1.5 - System Types
+- Satellite fixed links: These are typically created between fixed earth stations with
+large dish antennas and geostationary earth-orbiting satellites. The propagation effects are
+largely due to the Earth’s atmosphere, including meteorological effects such as rain. Usually
+operated in the SHF and EHF bands.
+- Terrestrial fixed links: Used for creating high data rate links between points on
+the Earth, for services such as telephone and data networks, plus interconnections between
+base stations in cellular systems. Also used for covering wide areas in urban and suburban
+environments for telephone and data services to residential and commercial buildings.
+Meteorological effects are again significant, together with the obstructing effects of hills,
+trees and buildings. Frequencies from VHF through to EHF are common.
+- Megacells: These are provided by satellite systems (or by high-altitude
+platforms such as stratospheric balloons) to mobile users, allowing coverage of very wide
+areas with reasonably low user densities. A single satellite in a low earth orbit would
+typically cover a region of 1000 km in diameter. The propagation effects are dominated by
+objects close to the user, but atmospheric effects also play a role at higher frequencies.
+Most systems operate at L(1-2 GHz) and S(2-4 GHz) bands to provide voice and low-rate data services,
+but systems operating as high as Ka(26-40 GHz) band can be deployed to provide Internet access at
+high data rates over limited areas.
+Macrocells:  Designed to provide mobile and broadcast services (including
+both voice and data), particularly outdoors, to rural, suburban and urban environments
+with medium traffic densities. Base station antenna heights are greater than the surrounding
+buildings, providing a cell radius from around 1 km to many tens of kilometres. Mostly
+operated at VHF and UHF. May also be used to provide fixed broadband access to
+buildings at high data rates, typically at UHF and low SHF frequencies.
+Microcells: Designed for high traffic densities in urban and suburban areas to
+users both outdoors and within buildings. Base station antennas are lower than nearby
+building rooftops, so coverage area is defined by street layout. Cell length up to around
+500 m. Again mostly operated at VHF and UHF, but services as high as 60 GHz have been
+studied.
+Picocells: Very high traffic density or high data rate applications in indoor
+environments. Users may be both mobile and fixed; fixed users are exemplified by wireless
+local area networks between computers. Coverage is defined by the shape and characteristics of rooms, 
+and service quality is dictated by the presence of furniture and people.
+1.6 - Aims of Cellullar Systems
+
+Coverage and mobility: The system must be available at all locations where users wish to
+use it. In the early development of a new system, this implies outdoor coverage over a wide
+area. As the system is developed and users become more demanding, the depth of
+coverage must be extended to include increasing numbers of indoor locations. In order
+to operate with a single device between different systems, the systems must provide
+mobility with respect to the allocation of resources and support of interworking between
+different standards.
+Capacity: As the number of users in a mobile system grows, the demands placed on the
+resources available from the allocated spectrum grow proportionately. These demands are
+exacerbated by increasing use of high data rate services. This necessitates the assignment
+of increasing numbers of channels and thus dense reuse of channels between cells in order
+to minimise problems with blocked or dropped calls. If a call is blocked, users are refused
+access to the network because there are no available channels. If a call is dropped, it may
+be interrupted because the user moves into a cell with no free channels. Dropped calls can
+also arise from inadequate coverage.
+Quality: In a mature network, the emphasis is on ensuring that the services provided to the
+users are of high quality – this includes the perceived speech quality in a voice system and
+the bit error rate (BER), throughput, latency and jitter in a data system.
+
+Subsequent chapters will show that path loss and shadowing dominate in establishing good
+coverage and capacity, while quality is particularly determined by the fast-fading effects
+
+1.7 - Cellular Networks
+1.8 - The Cellular Concept
+A very approximate model of the path loss: Pr/Pt = 1/L = kHmHb²/r^4/f²

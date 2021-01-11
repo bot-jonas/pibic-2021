@@ -16,7 +16,7 @@ dTransPower = dbm2lin(43); % Transmission power
 dNoisePower = dbm2lin(-116); % Noise power
 
 for iter=1:iNumIt
-	for i=1:iNumBS
+    for i=1:iNumBS
         dAngle  = 2*pi*rand();
         dRadius = dBSRadius*sqrt(rand()); % meter
 
