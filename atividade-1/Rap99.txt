@@ -66,7 +66,7 @@ Fading is the rapid fluctation of the amplitude of a radio signal over a short p
 Is caused by interference between versions of the transmitted signal which arrive at the receiver at slightly different times.
 4.1 - Small-scale Multipath Propagation
 4.1.1 - Factors influencing small-scale fading
-- Multipath propagation: presence of reflectiing objects and scatters that dissipates signals in amplitude, phase and time.
+- Multipath propagation: presence of reflecting objects and scatters that dissipates signals in amplitude, phase and time.
 Multiple versions arrive at the receiving antenna causing fluctuations in signal strenght.
 - Speed of the mobile: relative motion between BS and mobile results in random frequency modulation due to Doppler shifts on each multipath component.
 - Speed of surrounding objects: More doppler shift

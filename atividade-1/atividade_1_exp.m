@@ -7,11 +7,11 @@ dBSRadius = 500; % Distance between adjacent BS in m
 vtBSPos = [0 dBSRadius * exp(1i*[0 2*pi/3 -2*pi/3])];
 % Vector of TMs' positions 
 vtTMPos = zeros(iNumBS);
-iNumIt = 5000; % Number of iterations
+iNumIt = 1; % Number of iterations
 % Matrix of SINR results
 mtSINRRes = zeros(iNumIt, iNumBS);
 
-colors = ["k", "r", "g", "b"];
+colors = ["k", "r", "m", "b"];
 
 for i=1:iNumBS
     circle(vtBSPos(i), dBSRadius, colors(i));
@@ -28,9 +28,9 @@ for iter=1:iNumIt
 
         vtTMPos(i) = vtBSPos(i)+dRadius*exp(1i*dAngle); % meter
 
-        %hold on
-        %scatter(real(vtTMPos(i)), imag(vtTMPos(i)), colors(i)+"+");
-        %hold off
+        hold on
+        scatter(real(vtTMPos(i)), imag(vtTMPos(i)), colors(i)+"+");
+        hold off
 	end
     
     %teste(iter) = dRadius;
@@ -71,10 +71,7 @@ end
 axis equal
 
 %histogram(mtAux(:, 1)', 20);
-hold on
-cdfplot(mtSINRRes(:, 1)');
-cdfplot(mtSINRRes(:, 2)');
-hold off
+
 
 function [y] = db2lin(x)
 y = 10.^(x./10);

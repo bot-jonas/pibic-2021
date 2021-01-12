@@ -49,7 +49,8 @@ for iter=1:iNumIt
     vtSINR = zeros(1, iNumBS);
 
     for i=1:iNumBS
-       vtSINR(i) = lin2db(mtRecPower(i,i)/(dNoisePower + sum(mtRecPower(:, i))-mtRecPower(i,i)));
+        % SINR value in dB
+        vtSINR(i) = lin2db(mtRecPower(i,i)/(dNoisePower + sum(mtRecPower(:, i))-mtRecPower(i,i)));
     end
     
     mtSINRRes(iter, :) = vtSINR;
@@ -61,6 +62,8 @@ for i=1:iNumBS
     disp("Status of BS"+i);
     disp(s);
 end
+title('CDF of SINR values')
+legend('BS1', 'BS2', 'BS3', 'BS4')
 hold off
 
 function [y] = db2lin(x)
