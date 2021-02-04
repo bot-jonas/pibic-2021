@@ -1,0 +1,6 @@
+Leitura do artigo "James Gross e Mathias Bohge, Dynamic Mechanisms in OFDM Wireless Systems: A Survey on Mathematical and System Engineering Contributions, 2006" capítulos 1 ao 3. Fazer apresentação curta de no máximo 10 slides. Disponível em http://www.eecs.tu-berlin.de/fileadmin/fg112/Papers/TKN_Report_06_001.pdf  Prazo sugerido: 09/02/2021
+
+Leitura do artigo "Algoritmos de Alocação de Recursos de Rádio em Sistemas OFDMA" até a seção 4.B.1. Fazer apresentação curta de no máximo 10 slides. Disponível em: https://www.dropbox.com/s/cdh6umxk99byqtb/sbrt07_tutorial.pdf?dl=0   Prazo sugerido: 09/02/2021
+
+Estudo da biblioteca de otimização do Matlab (Optimization toolbox). Em especial, focar nas funções fmincon e bintprog (ou intlinprog dependendo da versão do Matlab). O estudante pode estudar tanto pelo help do Matlab como por outras fontes na internet. Pode tentar praticar com toy problems da internet. Prazo sugerido: 09/02/2021
+O foco da leitura deve ser no total entendimento da matemática apresentada assim como nos algoritmos. Prepare no máximo 12 slides com as partes principais e dúvidas.
