@@ -1,0 +1,61 @@
+The OFDM transmission scheme:
+Available bandwith B [Hz] is split into N sub-carriers, also referred
+as sub-channels. Instead of transmitting digital symbols sequentially
+through one channel, the bit stream is split into N parallel streams.
+Then bits from each stream are converted into digital symbols and 
+transmitted in parallel. The parallel transmission has important 
+consequences for the symbol length. [image from page 7]
+
+Presentation [James Gross e Mathias Bohge, Dynamic Mechanisms in OFDM Wireless Systems: A Survey on Mathematical and System Engineering Contributions, 2006][1,3]
+- FDM and orthogonal frequencies
+- The transmission model [with cyclic prefix]
+- Frequency-selectivity nature and the correlation of sub-carriers attenuation
+- Adaption of transmitter to the frequency-selective behavior of the channel to trasmit the data "better"
+- "water-pouring" theorem -> "given a limited transmit power, more power is applied to frequency areas with a lower attenuation compared to the other frequencies"
+- can't be applied directly
+  - needs continuous transfer function, but OFDM systems are characterized by a sample version
+  - the metric is capacity and continuous relationship between trasmitted power and received bits/sec is not a characteristic of applied communication systems, because they only have a limited set of modulation types
+- Given a certain power budget Pmax , the number of sub-carriers and a relationship between the data rate, the error probability and the SNR per sub-carrier, a loading algorithm generates a power and/or modulation allocation for each subcarrier
+- Maximizing the data rate for a given power budget
+and a target bit error probability (called the bit rate maximization problem), or minimizing the transmit
+power for a certain given rate and a target bit error probability (called the margin maximization
+problem)
+- How to generate the optimal allocation or at least a considerably “good” solution, and how to implement such a scheme in a real system?
+- Description of 3.1 and solutions
+- Problems and results of 3.2
+
+Presentation [Algoritmos de Alocação de Recursos de Rádio em Sistemas OFDMA](-inf, 4.B.1]
+- Use introductioin of this paper because is better and simple
+
+Optimization Toolbox
+- Functions for finding parameters that minimize or maximize objectives while sastifying constraints. 
+- Linear programming (LP)
+- Nonlinear programming (NLP)
+- Others, lol
+- fmincon - Find minimum of constrained nonlinear multivariable function
+- min_{x}{f(x)} | {
+	c(x) <= 0,
+	ceq(x) = 0,
+	A.x <= b,
+	Aeq.x = beq,
+	lb <= x <= ub
+}
+- x = fmincon(
+	fun,
+	x0,
+	A,
+	b,
+	Aeq,
+	beq,
+	lb,
+	ub,
+	nonlcon = [c, ceq],
+	options
+)
+
+- optional parameters: A = [], b = [], Aeq = [], beq = [], lb = -Inf, ub = Inf
+- options = optimoptions(@fmincon, 'Algorithm', 'sqp')
+- 'interior-point', 'sqp', ...
+
+- 'interior-point' : hard to understand everything, just describes superficially what it does
+- 'sqp': hard lol

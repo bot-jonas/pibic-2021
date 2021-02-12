@@ -1,0 +1,37 @@
+ esse
+teorema afirma que mais potˆencia deve ser alocada `as regi˜oes
+de freq¨uˆencia com menor atenuac¸˜ao ou desvanecimento
+
+The water-filling result holds only for a continuous transfer function whereas OFDM systems are characterized by a sample version of the transfer function
+(in other words, the “water-pouring” theorem assumes that the power can be adapted for infinitely small sub-carriers).
+Second, the metric considered is capacity. In particular, using capacity provides a continuous relationship between spent
+transmit power and received amount of bits per second. Applied communication systems do not have
+this property, they only have a limited set of different modulation types. These types provide only
+discrete steps of data rate.
+
+largura de banda das subportadoras fossem
+infinitesimal
+
+Ponto-ponto: conex˜oes em que existe somente um enlace transmissor e receptor
+
+Ponto-multiponto: Ganhos maiores por causa da diversidade multiusuário. Uma frequência ruim para um usuário pode estar boa para outro.
+
+aumentar o n´ıvel de modulac¸˜ao e codificac¸˜ao (aumentando a
+vaz˜ao) para as subportadoras que requerem o menor aumento
+de potˆencia nesse salto de MCSs
+Apesar do Algoritmo 1 n˜ao necessitar de uma enumerac¸˜ao
+total de todas as combinac¸˜oes de subportadoras e potˆencias
+poss´ıveis, ele pode se tornar proibitivo com o aumento do
+n´umero de subportadoras e MCSs dispon´ıveis para o enlace
+
+A outra ´e espec´ıfica para o caso multiusu´ario. Ela representa
+que cada subportadora pode estar associada a apenas um
+usu´ario por vez. 
+
+Solução: Primeiro aloca-se
+cada subportadora ao usu´ario com menor atenuac¸˜ao nela.
+Depois a potˆencia ´e estipulada usando water-filling. Embora
+essa abordagem seja computacionalmente simples, ela n˜ao ´e
+apropriada em diversos casos. Essa soluc¸˜ao tende a alocar
+recursos apenas aos usu´arios com estado de canal muito bom.
+
