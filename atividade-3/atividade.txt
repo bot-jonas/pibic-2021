@@ -1,0 +1,9 @@
+Simular um sistema ponto - ponto com 10 subportadoras. Assuma algumas hipóteses simplificativas tais como:
+- O canal pode ser modelado como 10*rand(1,10)
+- A potência total no transmissor é 200 W
+- A potência do ruído é 1 W
+- Largura de banda de uma subportadora igual a 1 Hz
+Aplique a solução water pouring ou water filling descrito na equação (3.3) e calcule a taxa total obtida em todas subportadoras de acordo com a equação (3.2)
+Aplique a solução equal power allocation, isto é, a potência total é distribuída igualitariamente entre as subportadoras e calcule a taxa total obtida em todas subportadoras de acordo com a equação (3.2)
+Compare qual das duas soluções fornecem a maior taxa.
+Aplique a solução ótima usando a função fmincon do Matlab e compare a taxa total obtida com a da solução water pouring. Prazo sugerido: 05/03/2021
