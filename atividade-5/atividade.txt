@@ -1,0 +1,17 @@
+NOMA:
+ Ler TCC da estudante Jhenifer de Oliveira: https://www.dropbox.com/s/fqo5jnl3qfqo7eo/TCC%20-%20Jhenifer%20final.pdf?dl=0
+ Ler artigo da Jhenifer do SBrT 2020: https://www.dropbox.com/s/jjjimj51j9sc5su/camera_ready_version.pdf?dl=0
+
+MIMO:
+ Livro da Andrea Goldsmith cap. 10 (10.1, 10.2, 10.4)
+ https://1drv.ms/b/s!AuAu3ALXeLXfoFoMswgBDtewFyxt?e=VUyi8w
+
+Rate splitting:
+ Rate-Splitting Unifying SDMA, OMA, NOMA, and Multicasting in MISO Broadcast Channel A Simple Two-User Rate Analysis
+  https://www.dropbox.com/s/ueqxwxtpstcz3ld/2020_Rate-Splitting%20Unifying%20SDMA%2C%20OMA%2C%20NOMA%2C%20and%20Multicasting%20in%20MISOBroadcast%20Channel%20A%20Simple%20Two-User%20Rate%20Analysis.pdf?dl=0
+ Até seção II
+ Rate-Splitting Multiple Access A New Frontier for the PHY Layer of 6G
+  https://www.dropbox.com/s/gn9t7tnf1uy822m/Rate-Splitting%20Multiple%20Access%20A%20New%20Frontier%20for%20the%20PHY%20Layer%20of%206G.pdf?dl=0
+ Até seção II
+ Sum-RateMaximization of Uplink Rate Splitting Multiple Access (RSMA) Communication
+  https://www.dropbox.com/s/r1n0wbhliszzq2i/2020_Sum-RateMaximization%20of%20Uplink%20Rate%20SplittingMultiple%20Access%20%28RSMA%29%20Communication.pdf?dl=0
