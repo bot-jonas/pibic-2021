@@ -1,0 +1,30 @@
+Considerando o mesmo cenário anterior e que agora o mapeamento entre taxa e SNR não é mais dado pela equação (3.2) e sim de forma discreta a seguir
+0<=SNR<1             Taxa = 0
+1<=SNR<3             Taxa = 1
+3<=SNR<7             Taxa = 2
+7<=SNR<15            Taxa = 3
+15<=SNR<31           Taxa = 4
+31<=SNR<63           Taxa = 5
+63<=SNR<127          Taxa = 6
+127<=SNR<255         Taxa = 7
+255<=SNR<511         Taxa = 8
+511<=SNR<1023        Taxa = 9
+SNR>=1023            Taxa = 10
+Aplique a solução apresentada no algoritmo 1 (Hughes Hartogs) e calcule a taxa total obtida em todas subportadoras de acordo com o mapeamento fornecido
+Aplique a solução equal power allocation e calcule a taxa total obtida em todas subportadoras de acordo com o mapeamento fornecido
+Compare qual das duas soluções fornecem a maior taxa.
+Aplique a solução ótima usando a função bintprog (ou intlinprog dependendo da versão do Matlab) do Matlab e compare a taxa total obtida com a da solução Hughes Hartogs.
+O problema a ser resolvido com o bintprog ou intlinprog é o problema combinatorial abaixo:
+Variável de otimização:
+* x_n,m - Recebe valor 1 se a subportadora n usa a MCS m e zero caso contrário.
+Outras variáveis:
+* gama_m - SNR mínima para que possamos transmitir na MCS m. por exemplo, pelo mapeamento dado, para transmitir com a taxa 3 (MCS 4), precisamos de no mínimo uma SNR de 7.
+* pot_n,m - Potência para que a subportadora n transmita na MCS m. Isso pode ser calculada da expressão da SNR. Para transmitir na MCS m, precisamos de uma SNR mínima de gama_m. Portanto, gama_m = pot_n,m * canal_n / pot_ruido. Isolando pot_n,m temos pot_n,m = gama_m * pot_ruido / canal_n em que pot_ruido é a potência de ruído e canal_n é o ganho de canal da subportadora n.
+* pot_total - Potência total disponível
+* r_m - Taxa transmitida quando a MCS m é utilizada.
+Problema:
+Max (sum_n sum_m (x_n,m * r_m))
+sujeito a
+sum_m (x_n,m) = 1 para todo n (Para cada subportadora n, somente uma MCS deve ser escolhida)
+sum_n sum_m (x_n,m * pot_n,m) <= pot_total (A soma das potência usadas em todas as subportadoras é menor que a total disponível)
+x_n,m é binário
